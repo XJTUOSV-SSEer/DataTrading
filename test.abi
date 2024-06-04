@@ -1,0 +1,342 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "x",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "y",
+				"type": "bytes"
+			}
+		],
+		"name": "G1_ADD",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "x",
+				"type": "bytes"
+			},
+			{
+				"internalType": "uint256",
+				"name": "k",
+				"type": "uint256"
+			}
+		],
+		"name": "G1_MUL",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCode",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "x1",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "x2",
+				"type": "bytes"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rM",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "y1",
+				"type": "bytes"
+			}
+		],
+		"name": "test",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "p1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "p2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "p3",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "c1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "c2",
+				"type": "uint256"
+			}
+		],
+		"name": "verify_pi_fj",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes",
+						"name": "pi_1",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "pi_2",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "pi_2_rm_neg",
+						"type": "bytes"
+					}
+				],
+				"internalType": "struct write.pi_fs_g1",
+				"name": "g1",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "bytes",
+						"name": "g2",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "X_A",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y_A_1",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y_A_2",
+						"type": "bytes"
+					}
+				],
+				"internalType": "struct write.pi_fs_g2",
+				"name": "g2",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ck1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ck2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ck3",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct write.pi_fs_ck",
+				"name": "ck",
+				"type": "tuple"
+			},
+			{
+				"internalType": "bytes",
+				"name": "m_f",
+				"type": "bytes"
+			}
+		],
+		"name": "verify_pi_fs",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes",
+						"name": "Y1",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y2",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y3",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y4",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "Y5",
+						"type": "bytes"
+					}
+				],
+				"internalType": "struct write.Y",
+				"name": "y",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "bytes",
+						"name": "e1",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "ee1",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "e2",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "ee2",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "tl",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "ttl",
+						"type": "bytes"
+					}
+				],
+				"internalType": "struct write.pi_ok_tt",
+				"name": "tt",
+				"type": "tuple"
+			},
+			{
+				"internalType": "bytes",
+				"name": "m_ok",
+				"type": "bytes"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ck1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ck2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ck3",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ck4",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct write.pi_ok_ck",
+				"name": "ck",
+				"type": "tuple"
+			},
+			{
+				"internalType": "bytes",
+				"name": "g1",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "pks",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "pkt",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "gc",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "h3_idf",
+				"type": "bytes"
+			}
+		],
+		"name": "verify_pi_ok",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
